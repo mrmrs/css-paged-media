@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "paged-media"
   ],
   "css-paged-media": {
     "type": "git",
