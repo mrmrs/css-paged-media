@@ -1,12 +1,6 @@
 # CSS PAGED MEDIA
 
-  Mobile-first classes for css-paged-media.
-  Set the desired css-paged-media on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
-
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+  Single purpose classes for css-paged-media.
 
 ## Install
 ```
