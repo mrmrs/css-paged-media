@@ -15,7 +15,8 @@ View on [npm](https://www.npmjs.org/package/css-paged-media)
 ## File Size
 
 808B paged-media.css
-554B paged-media.min.css
+554B paged-media.min.css 
+170B minified and gzipped
 
 ## The Code
 ```
