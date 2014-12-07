@@ -1,5 +1,6 @@
 {
   "name": "css-paged-media",
+  "style": "paged-media.css",
   "version": "0.0.4",
   "homepage": "http://github.com/mrmrs/css-paged-media",
   "description": "Css module of single purpose classes for paged media",
