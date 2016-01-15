@@ -1,15 +1,24 @@
+/*
+   PAGED MEDIA
+*/
+/*
+ * I don't think we need screen-width based media queries for these
+ * print styles.
+ *
+ */
+.page-ba-auto { page-break-after: auto; }
+.page-ba-always { page-break-after: always; }
+.page-ba-avoid { page-break-after: avoid; }
+.page-ba-l { page-break-after: left; }
+.page-ba-r { page-break-after: right; }
+.page-ba-i { page-break-after: inherit; }
+.page-bb-auto { page-break-before: auto; }
+.page-bb-always { page-break-before: always; }
+.page-bb-avoid { page-break-before: avoid; }
+.page-bb-l { page-break-before: left; }
+.page-bb-r { page-break-before: right; }
+.page-bb-i { page-break-before: inherit; }
+.page-bi-auto { page-break-inside: auto; }
+.page-bi-avoid { page-break-inside: avoid; }
+.page-bi-i { page-break-inside: inherit; }
 
-  Postprocess tachyons stylesheets
-
-  Usage
-    $ tachyons <input.css>
-
-  Options
-    -m, --minify Minify the output stylesheet
-    --generate-docs Generate documentation for a given module
-    --package The path to the module package to be documented
-
-  Example
-    $ tachyons src/tachyons.css > dist/c.css
-    $ tachyons src/tachyons.css > dist/c.css --minify
-    $ tachyons src/tachyons-type-scale.css --generate-docs --package=./package.json > readme.md
