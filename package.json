@@ -1,7 +1,7 @@
 {
   "name": "css-paged-media",
   "style": "paged-media.css",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "homepage": "http://github.com/mrmrs/css-paged-media",
   "description": "Css module of single purpose classes for paged media",
   "keywords": [
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.2"
+    "tachyons-cli": "^1.0.4"
   },
   "scripts": {
     "start": "tachyons src/css-paged-media.css > css/css-paged-media.css && tachyons src/css-paged-media.css --minify > css/css-paged-media.min.css && tachyons src/css-paged-media.css --generate-docs --package=../../package.json > readme.md"
