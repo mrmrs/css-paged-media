@@ -1,38 +1,44 @@
 {
   "name": "css-paged-media",
-  "style": "paged-media.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-paged-media",
-  "description": "Css module of single purpose classes for paged media",
+  "version": "2.0.0",
+  "description": "Functional CSS for paged-media",
+  "style": "dist/paged-media.css",
+  "main": "dist/paged-media.css",
+  "exports": {
+    ".": "./dist/paged-media.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "paged-media"
+    "paged-media",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-paged-media": {
+  "homepage": "https://github.com/mrmrs/css-paged-media",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-paged-media.git"
+    "url": "https://github.com/mrmrs/css-paged-media.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-paged-media/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-paged-media/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
