@@ -1,99 +1,83 @@
-# css-paged-media 0.0.6
+# css-paged-media
 
-Css module of single purpose classes for paged media
+Functional CSS for paged-media
 
-#### Stats
+## Filesize
 
-258 | 15 | 15
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/paged-media.css` | 687 bytes |
+| `dist/paged-media.min.css` | 553 bytes (158 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-paged-media
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-paged-media
+```sh
+npm install css-paged-media
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-paged-media";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-paged-media">
+<link rel="stylesheet" href="https://unpkg.com/css-paged-media/dist/paged-media.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   PAGED MEDIA
-*/
-/*
- * I don't think we need screen-width based media queries for these
- * print styles.
- *
- */
-.page-ba-auto { page-break-after: auto; }
-.page-ba-always { page-break-after: always; }
-.page-ba-avoid { page-break-after: avoid; }
-.page-ba-l { page-break-after: left; }
-.page-ba-r { page-break-after: right; }
-.page-ba-i { page-break-after: inherit; }
-.page-bb-auto { page-break-before: auto; }
-.page-bb-always { page-break-before: always; }
-.page-bb-avoid { page-break-before: avoid; }
-.page-bb-l { page-break-before: left; }
-.page-bb-r { page-break-before: right; }
-.page-bb-i { page-break-before: inherit; }
-.page-bi-auto { page-break-inside: auto; }
-.page-bi-avoid { page-break-inside: avoid; }
-.page-bi-i { page-break-inside: inherit; }
+```html
+<link rel="stylesheet" href="path/to/css-paged-media/dist/paged-media.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.page-ba-auto` | `page-break-after: auto;` |
+| `.page-ba-always` | `page-break-after: always;` |
+| `.page-ba-avoid` | `page-break-after: avoid;` |
+| `.page-ba-l` | `page-break-after: left;` |
+| `.page-ba-r` | `page-break-after: right;` |
+| `.page-ba-i` | `page-break-after: inherit;` |
+| `.page-bb-auto` | `page-break-before: auto;` |
+| `.page-bb-always` | `page-break-before: always;` |
+| `.page-bb-avoid` | `page-break-before: avoid;` |
+| `.page-bb-l` | `page-break-before: left;` |
+| `.page-bb-r` | `page-break-before: right;` |
+| `.page-bb-i` | `page-break-before: inherit;` |
+| `.page-bi-auto` | `page-break-inside: auto;` |
+| `.page-bi-avoid` | `page-break-inside: avoid;` |
+| `.page-bi-i` | `page-break-inside: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.page-ba-auto-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/paged-media.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/paged-media.css` — formatted
+- `dist/paged-media.min.css` — minified
 
 ## License
 
-ISC
+MIT
